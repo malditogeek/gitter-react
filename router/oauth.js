@@ -6,7 +6,7 @@ var OAuth2 = require('oauth').OAuth2;
 var OAUTH_KEY     = process.env.OAUTH_KEY;
 var OAUTH_SECRET  = process.env.OAUTH_SECRET;
 var BASEPATH      = 'https://gitter.im/';
-var REDIRECT      = 'http://localhost:4321/oauth/callback';
+var REDIRECT      = process.env.REDIRECT;
 
 var auth = new OAuth2(OAUTH_KEY, OAUTH_SECRET, BASEPATH, 'login/oauth/authorize', 'login/oauth/token');
 

@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 app.use(serve_static('public'));
 app.disable('x-powered-by');
-app.use(session({secret: 'changeme'}));
+app.use(session({secret: process.env.SESSION_SECRET}));
 
 app.get('/', require('./router/home'));
 app.use('/oauth', require('./router/oauth'));
