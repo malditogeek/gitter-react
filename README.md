@@ -4,6 +4,8 @@
 
 A mobile Gitter client using isomorphic React.
 
+You can try it here: http://gitter-react.herokuapp.com
+
 ## WIP
 
 I'm building this as an exercise to learn some React. Feel free to contribute tho :+1:
@@ -14,6 +16,8 @@ You'll need to create an app at https://developer.gitter.im and expose your cred
 
 - `export OAUTH_KEY=<your_app_key>`
 - `export OAUTH_SECRET=<your_app_secret>`
+- `export REDIRECT=<your_app_redirect>`
+- `export SESSION_SECRET=<secret>`
 
 - Start the server: `npm start`
 - Build the app+css: `npm run webpack`
